@@ -13,8 +13,9 @@ Converts the waveforms out of Modelsim into a visualized format
 1. Make sure each vector IO in your top-level modules is the same width as they appear on the board
    For example, the ```LEDR``` output should be defined as ```output [9:0] LEDR``` and ```SW``` input should be defined as ```input [9:0] SW```
 2. Append ```add list *``` to the end of the modelsim macros (```.do```) file
-3. Select the ```List``` window, go to ```File -> Export -> Event List``` and save the file in the same directory as the python files.
-4. Run ```python3 main.py <lst file>``` and you should see something similar to the screenshot underneath.
+3. Open up ```modelsim```, ```cd``` into your working directory, and run your macros file.
+4. Select the ```List``` window, go to ```File -> Export -> Event List``` and save the file in the same directory as the python files.
+5. Run ```python3 main.py <lst file>``` and you should see something similar to the screenshot underneath.
 
 ### Sample screenshot
 ![Screenshot][Sample]
